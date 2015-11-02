@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Exported from Notepad++</title>
+<style type="text/css">
+span {
+	font-family: 'Courier New';
+	font-size: 10pt;
+	color: #000000;
+}
+.sc0 {
+	font-weight: bold;
+}
+.sc1 {
+	color: #0000FF;
+}
+.sc3 {
+	color: #FF0000;
+}
+.sc6 {
+	font-weight: bold;
+	color: #8000FF;
+}
+.sc8 {
+}
+.sc40 {
+}
+.sc41 {
+	background: #F2F4FF;
+}
+.sc45 {
+	color: #FF0000;
+	background: #F2F4FF;
+}
+.sc46 {
+	background: #F2F4FF;
+}
+.sc47 {
+	font-weight: bold;
+	font-style: italic;
+	color: #000080;
+	background: #F2F4FF;
+}
+.sc48 {
+	color: #808080;
+	background: #F2F4FF;
+}
+.sc49 {
+	color: #808080;
+	background: #F2F4FF;
+}
+.sc50 {
+	font-weight: bold;
+	background: #F2F4FF;
+}
+</style>
+</head>
+<body>
+<div style="float: left; white-space: pre; line-height: 1; background: #FFFFFF; "><span class="sc1">&lt;html&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;head&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;title&gt;</span><span class="sc0">Google Charts Samples</span><span class="sc1">&lt;/title&gt;</span><span class="sc0">
+        
+        </span><span class="sc1">&lt;script</span><span class="sc8"> </span><span class="sc3">type</span><span class="sc8">=</span><span class="sc6">"text/javascript"</span><span class="sc8"> </span><span class="sc3">src</span><span class="sc8">=</span><span class="sc6">"https://www.google.com/jsapi"</span><span class="sc1">&gt;&lt;/script&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;script</span><span class="sc8"> </span><span class="sc3">type</span><span class="sc8">=</span><span class="sc6">"text/javascript"</span><span class="sc1">&gt;</span><span class="sc40">
+</span><span class="sc41">            </span><span class="sc46">google.load</span><span class="sc50">(</span><span class="sc49">'visualization'</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc49">'1'</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc50">{</span><span class="sc46">packages</span><span class="sc50">:</span><span class="sc41"> </span><span class="sc50">[</span><span class="sc49">'corechart'</span><span class="sc50">]});</span><span class="sc41">
+        </span><span class="sc1">&lt;/script&gt;</span><span class="sc0">
+        
+        </span><span class="sc1">&lt;script</span><span class="sc8"> </span><span class="sc3">type</span><span class="sc8">=</span><span class="sc6">"text/javascript"</span><span class="sc1">&gt;</span><span class="sc40">
+</span><span class="sc41">            </span><span class="sc47">function</span><span class="sc41"> </span><span class="sc46">LineChart</span><span class="sc50">(</span><span class="sc46">flag</span><span class="sc50">)</span><span class="sc41"> </span><span class="sc50">{</span><span class="sc41">
+                </span><span class="sc47">var</span><span class="sc41"> </span><span class="sc46">x</span><span class="sc41"> </span><span class="sc50">=</span><span class="sc41"> </span><span class="sc46">document.getElementById</span><span class="sc50">(</span><span class="sc48">"line_chart_div"</span><span class="sc50">);</span><span class="sc41">
+                </span><span class="sc47">if</span><span class="sc41"> </span><span class="sc50">(</span><span class="sc46">flag</span><span class="sc50">)</span><span class="sc41"> </span><span class="sc50">{</span><span class="sc41">
+                    </span><span class="sc47">var</span><span class="sc41"> </span><span class="sc46">data</span><span class="sc41"> </span><span class="sc50">=</span><span class="sc41"> </span><span class="sc47">new</span><span class="sc41"> </span><span class="sc46">google.visualization.DataTable</span><span class="sc50">();</span><span class="sc41">
+                    </span><span class="sc46">data.addColumn</span><span class="sc41"> </span><span class="sc50">(</span><span class="sc49">'string'</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc49">'Day'</span><span class="sc50">);</span><span class="sc41">
+                    </span><span class="sc46">data.addColumn</span><span class="sc41"> </span><span class="sc50">(</span><span class="sc49">'number'</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc49">'Value'</span><span class="sc50">);</span><span class="sc41">
+                    </span><span class="sc47">for</span><span class="sc41"> </span><span class="sc50">(</span><span class="sc46">i</span><span class="sc41"> </span><span class="sc50">=</span><span class="sc41"> </span><span class="sc45">0</span><span class="sc50">;</span><span class="sc41"> </span><span class="sc46">i</span><span class="sc50">&lt;</span><span class="sc45">50</span><span class="sc50">;</span><span class="sc41"> </span><span class="sc46">i</span><span class="sc50">++)</span><span class="sc41"> </span><span class="sc50">{</span><span class="sc41">
+                        </span><span class="sc47">var</span><span class="sc41"> </span><span class="sc46">aLabel</span><span class="sc41"> </span><span class="sc50">=</span><span class="sc41"> </span><span class="sc48">"D"</span><span class="sc41"> </span><span class="sc50">+</span><span class="sc41"> </span><span class="sc46">i</span><span class="sc50">;</span><span class="sc41"> 
+                        </span><span class="sc47">var</span><span class="sc41"> </span><span class="sc46">aValue</span><span class="sc41"> </span><span class="sc50">=</span><span class="sc41"> </span><span class="sc46">Math.floor</span><span class="sc50">(</span><span class="sc46">Math.random</span><span class="sc50">()</span><span class="sc41"> </span><span class="sc50">*</span><span class="sc41"> </span><span class="sc45">50</span><span class="sc50">);</span><span class="sc41">
+                        </span><span class="sc46">data.addRows</span><span class="sc50">([[</span><span class="sc46">aLabel</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc46">aValue</span><span class="sc50">]]);</span><span class="sc41">
+                    </span><span class="sc50">}</span><span class="sc41">
+                    </span><span class="sc47">var</span><span class="sc41"> </span><span class="sc46">options</span><span class="sc41"> </span><span class="sc50">=</span><span class="sc41">   </span><span class="sc50">{</span><span class="sc46">legend</span><span class="sc50">:</span><span class="sc49">'none'</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc46">curveType</span><span class="sc50">:</span><span class="sc49">'funcrtion'</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc46">colors</span><span class="sc50">:[</span><span class="sc49">'red'</span><span class="sc50">,</span><span class="sc49">'#004411'</span><span class="sc50">]};</span><span class="sc41">
+                    </span><span class="sc47">var</span><span class="sc41"> </span><span class="sc46">chart</span><span class="sc41"> </span><span class="sc50">=</span><span class="sc41"> </span><span class="sc47">new</span><span class="sc41"> </span><span class="sc46">google.visualization.LineChart</span><span class="sc50">(</span><span class="sc46">x</span><span class="sc50">);</span><span class="sc41">
+                    </span><span class="sc46">chart.draw</span><span class="sc50">(</span><span class="sc46">data</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc46">options</span><span class="sc50">);</span><span class="sc41">
+                </span><span class="sc50">}</span><span class="sc41">
+                </span><span class="sc47">else</span><span class="sc41">
+                    </span><span class="sc46">x.innerHTML</span><span class="sc41"> </span><span class="sc50">=</span><span class="sc41"> </span><span class="sc48">""</span><span class="sc50">;</span><span class="sc41">
+            </span><span class="sc50">}</span><span class="sc41">
+            
+            </span><span class="sc47">function</span><span class="sc41"> </span><span class="sc46">CandlestickChart</span><span class="sc50">(</span><span class="sc46">flag</span><span class="sc50">)</span><span class="sc41"> </span><span class="sc50">{</span><span class="sc41">
+                </span><span class="sc47">var</span><span class="sc41"> </span><span class="sc46">x</span><span class="sc41"> </span><span class="sc50">=</span><span class="sc41"> </span><span class="sc46">document.getElementById</span><span class="sc50">(</span><span class="sc48">"candlestick_chart_div"</span><span class="sc50">);</span><span class="sc41">
+                </span><span class="sc47">if</span><span class="sc41"> </span><span class="sc50">(</span><span class="sc46">flag</span><span class="sc50">)</span><span class="sc41"> </span><span class="sc50">{</span><span class="sc41">
+                    </span><span class="sc47">var</span><span class="sc41"> </span><span class="sc46">data</span><span class="sc41"> </span><span class="sc50">=</span><span class="sc41"> </span><span class="sc47">new</span><span class="sc41"> </span><span class="sc46">google.visualization.DataTable</span><span class="sc50">();</span><span class="sc41">
+                    </span><span class="sc46">data.addColumn</span><span class="sc41"> </span><span class="sc50">(</span><span class="sc49">'string'</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc49">'Label'</span><span class="sc50">);</span><span class="sc41">
+                    </span><span class="sc46">data.addColumn</span><span class="sc41"> </span><span class="sc50">(</span><span class="sc49">'number'</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc49">'Min'</span><span class="sc50">);</span><span class="sc41">
+                    </span><span class="sc46">data.addColumn</span><span class="sc41"> </span><span class="sc50">(</span><span class="sc49">'number'</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc49">'Open'</span><span class="sc50">);</span><span class="sc41">
+                    </span><span class="sc46">data.addColumn</span><span class="sc41"> </span><span class="sc50">(</span><span class="sc49">'number'</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc49">'Close'</span><span class="sc50">);</span><span class="sc41">
+                    </span><span class="sc46">data.addColumn</span><span class="sc41"> </span><span class="sc50">(</span><span class="sc49">'number'</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc49">'Max'</span><span class="sc50">);</span><span class="sc41">
+                    </span><span class="sc47">for</span><span class="sc41"> </span><span class="sc50">(</span><span class="sc46">i</span><span class="sc41"> </span><span class="sc50">=</span><span class="sc41"> </span><span class="sc45">0</span><span class="sc50">;</span><span class="sc41"> </span><span class="sc46">i</span><span class="sc50">&lt;</span><span class="sc45">50</span><span class="sc50">;</span><span class="sc41"> </span><span class="sc46">i</span><span class="sc50">++)</span><span class="sc41"> </span><span class="sc50">{</span><span class="sc41">
+                        </span><span class="sc47">var</span><span class="sc41"> </span><span class="sc46">aLabel</span><span class="sc41"> </span><span class="sc50">=</span><span class="sc41"> </span><span class="sc48">"D"</span><span class="sc41"> </span><span class="sc50">+</span><span class="sc41"> </span><span class="sc46">i</span><span class="sc50">;</span><span class="sc41"> 
+                        </span><span class="sc47">var</span><span class="sc41"> </span><span class="sc46">aMin</span><span class="sc41"> </span><span class="sc50">=</span><span class="sc41"> </span><span class="sc46">Math.floor</span><span class="sc50">(</span><span class="sc46">Math.random</span><span class="sc50">()</span><span class="sc41"> </span><span class="sc50">*</span><span class="sc41"> </span><span class="sc45">10</span><span class="sc50">);</span><span class="sc41">
+                        </span><span class="sc47">var</span><span class="sc41"> </span><span class="sc46">aMax</span><span class="sc41"> </span><span class="sc50">=</span><span class="sc41"> </span><span class="sc46">Math.floor</span><span class="sc50">(</span><span class="sc46">Math.random</span><span class="sc50">()</span><span class="sc41"> </span><span class="sc50">*</span><span class="sc41"> </span><span class="sc45">20</span><span class="sc50">);</span><span class="sc41">
+                        </span><span class="sc46">data.addRows</span><span class="sc50">([[</span><span class="sc46">aLabel</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc46">aMin</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc46">aMin</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc46">aMax</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc46">aMax</span><span class="sc50">]]);</span><span class="sc41">
+                    </span><span class="sc50">}</span><span class="sc41">
+                    </span><span class="sc47">var</span><span class="sc41"> </span><span class="sc46">options</span><span class="sc41"> </span><span class="sc50">=</span><span class="sc41">   </span><span class="sc50">{</span><span class="sc46">legend</span><span class="sc50">:</span><span class="sc49">'none'</span><span class="sc50">};</span><span class="sc41">
+                    </span><span class="sc47">var</span><span class="sc41"> </span><span class="sc46">chart</span><span class="sc41"> </span><span class="sc50">=</span><span class="sc41"> </span><span class="sc47">new</span><span class="sc41"> </span><span class="sc46">google.visualization.CandlestickChart</span><span class="sc50">(</span><span class="sc46">x</span><span class="sc50">);</span><span class="sc41">
+                    </span><span class="sc46">chart.draw</span><span class="sc50">(</span><span class="sc46">data</span><span class="sc50">,</span><span class="sc41"> </span><span class="sc46">options</span><span class="sc50">);</span><span class="sc41">
+                </span><span class="sc50">}</span><span class="sc41">
+                </span><span class="sc47">else</span><span class="sc41">
+                    </span><span class="sc46">x.innerHTML</span><span class="sc41"> </span><span class="sc50">=</span><span class="sc41"> </span><span class="sc48">""</span><span class="sc50">;</span><span class="sc41">
+            </span><span class="sc50">}</span><span class="sc41">
+        </span><span class="sc1">&lt;/script&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;/head&gt;</span><span class="sc0">
+    
+    </span><span class="sc1">&lt;body&gt;</span><span class="sc0">      
+        </span><span class="sc1">&lt;p&gt;</span><span class="sc0">
+            Exemple "Line Chart":
+            </span><span class="sc1">&lt;input</span><span class="sc8"> </span><span class="sc3">type</span><span class="sc8">=</span><span class="sc6">"button"</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"Load Chart"</span><span class="sc8"> </span><span class="sc3">onclick</span><span class="sc8">=</span><span class="sc6">"javascript:LineChart(true)"</span><span class="sc1">&gt;</span><span class="sc0">
+            </span><span class="sc1">&lt;input</span><span class="sc8"> </span><span class="sc3">type</span><span class="sc8">=</span><span class="sc6">"button"</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"Hide Chart"</span><span class="sc8"> </span><span class="sc3">onclick</span><span class="sc8">=</span><span class="sc6">"javascript:LineChart(false)"</span><span class="sc1">&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;/p&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;div</span><span class="sc8"> </span><span class="sc3">id</span><span class="sc8">=</span><span class="sc6">"line_chart_div"</span><span class="sc1">&gt;&lt;/div&gt;</span><span class="sc0">
+        
+        </span><span class="sc1">&lt;p&gt;</span><span class="sc0">
+            Exemple "Candlestick Chart":
+            </span><span class="sc1">&lt;input</span><span class="sc8"> </span><span class="sc3">type</span><span class="sc8">=</span><span class="sc6">"button"</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"Load Chart"</span><span class="sc8"> </span><span class="sc3">onclick</span><span class="sc8">=</span><span class="sc6">"javascript:CandlestickChart(true)"</span><span class="sc1">&gt;</span><span class="sc0">
+            </span><span class="sc1">&lt;input</span><span class="sc8"> </span><span class="sc3">type</span><span class="sc8">=</span><span class="sc6">"button"</span><span class="sc8"> </span><span class="sc3">value</span><span class="sc8">=</span><span class="sc6">"Hide Chart"</span><span class="sc8"> </span><span class="sc3">onclick</span><span class="sc8">=</span><span class="sc6">"javascript:CandlestickChart(false)"</span><span class="sc1">&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;/p&gt;</span><span class="sc0">
+        </span><span class="sc1">&lt;div</span><span class="sc8"> </span><span class="sc3">id</span><span class="sc8">=</span><span class="sc6">"candlestick_chart_div"</span><span class="sc1">&gt;&lt;/div&gt;</span><span class="sc0">
+    </span><span class="sc1">&lt;/body&gt;</span><span class="sc0">
+</span><span class="sc1">&lt;/html&gt;</span></div></body>
+</html>
