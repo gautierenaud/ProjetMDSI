@@ -6,10 +6,10 @@
 		<meta name="author" content="Thomas POUVREAU" />
 		<title>BD Universite</title>
 		<link rel="stylesheet" type="text/css" media="screen" href="./CSS/main.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" />
 		<script src="./Javascript/main.js" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" />
 	</head>
 	<body>
-		
+	
 	</body>
 </html>
