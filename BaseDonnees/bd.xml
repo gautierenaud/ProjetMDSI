@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Universite>
+  <Etudiant>
+    <Personne>
+      <ID>???</ID>
+      <Nom>str1234</Nom>
+      <Prenom>str1234</Prenom>
+      <Anniv>2012-12-13</Anniv>
+    </Personne>
+    <Matieres>
+      <MatID MatiereID="123" />
+      <Note>123</Note>
+    </Matieres>
+    <Annee>123</Annee>
+    <Cursus>str1234</Cursus>
+    <Groupe>str1234</Groupe>
+  </Etudiant>
+  <Enseignant>
+    <Personne>
+      <ID>???</ID>
+      <Nom>str1234</Nom>
+      <Prenom>str1234</Prenom>
+      <Anniv>2012-12-13</Anniv>
+    </Personne>
+    <MatID MatiereID="123" />
+    <Grade>str1234</Grade>
+  </Enseignant>
+  <Matiere ID="123">
+    <Nom>str1234</Nom>
+    <Code>str1234</Code>
+    <Credit>123</Credit>
+  </Matiere>
+</Universite>
