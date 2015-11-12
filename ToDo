@@ -1,0 +1,3 @@
+Splitter la base de donnée: Etudiant.xml, Enseignant.xml, Matiere.xml
+faire les xsd associés, voir comment "linker" les xsd entre eux, pour pouvoir utiliser les clefs de Matiere
+faire les requêtes xQuery du pdf
