@@ -28,15 +28,9 @@
 				<xsd:element name="Personne" type="type-personne" />
 				<xsd:element name="Matieres">
 					<xsd:complexType>
-						<xsd:sequence>
-							<xsd:element name="Matieres-suivies" minOccurs="0" maxOccurs="unbounded">
-								<xsd:complexType>
-									<xsd:sequence>
-										<xsd:element ref="Matiere"/>
-										<xsd:element name="Note" type="xsd:int"/>
-									</xsd:sequence>
-								</xsd:complexType>
-							</xsd:element>
+						<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+							<xsd:element ref="Matiere"/>
+							<xsd:element name="Note" type="xsd:int"/>
 						</xsd:sequence>
 					</xsd:complexType>
 				</xsd:element>
@@ -50,8 +44,7 @@
 	<xsd:element name="Enseignant">
 		<xsd:complexType>
 			<xsd:sequence>
-				<xsd:element name="Personne" type="type-personne" />
-				<xsd:element ref="Matiere" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element name="Personne" type="type-personne"/>
 				<xsd:element name="Grade" type="xsd:string"/>
 			</xsd:sequence>
 		</xsd:complexType>
