@@ -44,11 +44,13 @@
 				<xsd:element name="Matieres">
 					<xsd:complexType>
 						<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+
 							<xsd:element name="MatID" >
 								<xsd:complexType>
 									<xsd:attribute name="MatiereID" type="xsd:int"/>
 								</xsd:complexType>
 							</xsd:element>
+
 							<xsd:element name="Note" type="xsd:int"/>
 						</xsd:sequence>
 					</xsd:complexType>
@@ -67,12 +69,14 @@
 	<xsd:element name="Enseignant">
 		<xsd:complexType>
 			<xsd:sequence>
+
 				<xsd:element name="Personne" type="type-personne" />
 				<xsd:element name="MatID" minOccurs="0" maxOccurs="unbounded" >
 					<xsd:complexType>
 						<xsd:attribute name="MatiereID" type="xsd:int"/>
 					</xsd:complexType>
 				</xsd:element>
+				
 				<xsd:element name="Grade" type="xsd:string"/>
 			</xsd:sequence>
 		</xsd:complexType>
