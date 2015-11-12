@@ -21,7 +21,5 @@
 			<input type="textfield" />
 		</div>
 		<div id="outputResult">
-		
-		</div>
 	</body>
 </html>
