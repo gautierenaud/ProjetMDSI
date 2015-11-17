@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Enseignants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bd.xsd">
-
+	<Enseignant>
+		<Personne ID="lb54">
+			<Nom>Le Botlan</Nom>
+			<Prenom>Didier</Prenom>
+			<Anniv>1998-08-08</Anniv>
+		</Personne>
+		<MatID MatiereID="p42"/>
+		<Grade>assistant</Grade>
+	</Enseignant>
 </Enseignants>

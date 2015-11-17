@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Etudiants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bd.xsd">
+	<Etudiant>
+		<Personne ID="lb54">
+			<Nom>Le Botlan</Nom>
+			<Prenom>Didier</Prenom>
+			<Anniv>1998-08-08</Anniv>
+		</Personne>
+		<Matieres>
+			<MatID MatiereID="p42">
+				<Note>10</Note>
+			</MatID>
+		</Matieres>
+		<Annee>45</Annee>
+		<Cursus>Info</Cursus>
+		<Groupe>TDA</Groupe>
+	</Etudiant>
+</Etudiants>

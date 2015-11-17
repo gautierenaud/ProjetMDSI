@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Matieres xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bd.xsd">
+	<Matiere ID="p42">
+		<Nom>Info Mat</Nom>
+		<Code>toto</Code>
+		<Credit>0</Credit>
+	</Matiere>
+	<Matiere ID="f42">
+		<Nom>Info Mat</Nom>
+		<Code>toto</Code>
+		<Credit>0</Credit>
+	</Matiere>
+</Matieres>
