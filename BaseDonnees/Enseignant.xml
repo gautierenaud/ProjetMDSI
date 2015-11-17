@@ -9,4 +9,33 @@
 		<MatID MatiereID="p42"/>
 		<Grade>assistant</Grade>
 	</Enseignant>
+	<Enseignant>
+		<Personne ID="m2005">
+			<Nom>Tomtom</Nom>
+			<Prenom>Motmot</Prenom>
+			<Anniv>1998-10-08</Anniv>
+		</Personne>
+		<MatID MatiereID="p42"/>
+		<MatID MatiereID="h57"/>
+		<MatID MatiereID="u25"/>
+		<Grade>doctorant</Grade>
+	</Enseignant>
+	<Enseignant>
+		<Personne ID="fl98">
+			<Nom>La Botlanne</Nom>
+			<Prenom>Didiette</Prenom>
+			<Anniv>1800-10-18</Anniv>
+		</Personne>
+		<MatID MatiereID="o02"/>
+		<Grade>fossile</Grade>
+	</Enseignant>
+	<Enseignant>
+		<Personne ID="tgv2596">
+			<Nom>Bergerac</Nom>
+			<Prenom>Cyrano</Prenom>
+			<Anniv>1897-08-08</Anniv>
+		</Personne>
+		<MatID MatiereID="fr2"/>
+		<Grade>grand maître</Grade>
+	</Enseignant>
 </Enseignants>
