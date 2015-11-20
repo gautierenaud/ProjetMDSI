@@ -15,4 +15,35 @@
 		<Cursus>Info</Cursus>
 		<Groupe>TDA</Groupe>
 	</Etudiant>
+	<Etudiant>
+	<Personne ID="lb55">
+		<Nom>Bastien</Nom>
+		<Prenom>Delegue</Prenom>
+		<Anniv>1998-01-08</Anniv>
+	</Personne>
+	<Matieres>
+		<MatID MatiereID="p42">
+			<Note>30</Note>
+		</MatID>
+	</Matieres>
+	<Annee>45</Annee>
+	<Cursus>Info</Cursus>
+	<Groupe>TDA</Groupe>
+	</Etudiant>
+	<Etudiant>
+	<Personne ID="lb56">
+		<Nom>Truc</Nom>
+		<Prenom>Chose</Prenom>
+		<Anniv>1988-10-08</Anniv>
+	</Personne>
+	<Matieres>
+		<MatID MatiereID="p97">
+			<Note>8</Note>
+			<Note>12</Note>
+		</MatID>
+	</Matieres>
+	<Annee>45</Annee>
+	<Cursus>GC</Cursus>
+	<Groupe>TDA</Groupe>
+	</Etudiant>
 </Etudiants>
