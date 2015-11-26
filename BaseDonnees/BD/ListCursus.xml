@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <ListCursus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bd.xsd">
 	<Cursus CursusName="Info">
-	<UF ID="U42">
-		<MatID></MatID>
-	</UF>
-	<UF ID="Z42">
-		<MatID></MatID>
-	</UF>
+		<UF ID="U42">
+			<MatID ID="p42" />
+			<MatID ID="o42" />
+		</UF>
+		<UF ID="Z42">
+			<MatID ID="f42" />
+		</UF>
 	</Cursus>
 </ListCursus>

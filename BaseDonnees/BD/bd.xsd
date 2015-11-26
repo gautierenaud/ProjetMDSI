@@ -69,7 +69,7 @@
 			<xsd:sequence>
 				<xsd:element name="MatID" minOccurs="1" maxOccurs="3"/>
 			</xsd:sequence>
-			<xsd:attribute name="ID" type="xsd:ID"/>
+			<xsd:attribute name="ID" type="xsd:string"/>
 		</xsd:complexType>
 		<xsd:keyref name="UFmatiereRef" refer="MatiereKey">
 			<xsd:selector xpath="Matieres/Matiere" />
@@ -107,12 +107,19 @@
 				<xsd:element name="Matieres">  
 					<xsd:complexType>
 						<xsd:sequence minOccurs="0" maxOccurs="unbounded">
-							<xsd:element name="MatID" >
+							<xsd:element name="MatieresParAnnee" minOccurs="0" maxOccurs="unbounded">
 								<xsd:complexType>
 									<xsd:sequence>
-										<xsd:element name="Note" type="noteInt" minOccurs="0" maxOccurs="unbounded"/>
+										<xsd:element name="MatID" >
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="Note" type="noteInt" minOccurs="0" maxOccurs="unbounded"/>
+												</xsd:sequence>
+												<xsd:attribute name="MatiereID" type="xsd:string"/>
+											</xsd:complexType>
+										</xsd:element>
 									</xsd:sequence>
-									<xsd:attribute name="MatiereID" type="xsd:string"/>
+									<xsd:attribute name="Annee" />
 								</xsd:complexType>
 							</xsd:element>
 						</xsd:sequence>
@@ -122,7 +129,7 @@
 						<xsd:field xpath="MatID/@MatiereID" />
 					</xsd:keyref>
 				</xsd:element>
-				<xsd:element name="Annee" type="xsd:int"/>
+				<xsd:element name="AnneeActuelle" type="xsd:int"/>
 				<xsd:element name="Cursus" type="xsd:string"/>
 				<xsd:element name="Groupe" type="xsd:string"/>
 			</xsd:sequence>

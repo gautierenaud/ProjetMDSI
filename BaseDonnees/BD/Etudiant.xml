@@ -7,11 +7,13 @@
 			<Anniv>1998-08-08</Anniv>
 		</Personne>
 		<Matieres>
-			<MatID MatiereID="p42">
-				<Note>10</Note>
-			</MatID>
+			<MatieresParAnnee Annee="2">
+				<MatID MatiereID="p42">
+					<Note>10</Note>
+				</MatID>
+			</MatieresParAnnee>
 		</Matieres>
-		<Annee>45</Annee>
+		<AnneeActuelle>5</AnneeActuelle>
 		<Cursus>Info</Cursus>
 		<Groupe>TDA</Groupe>
 	</Etudiant>
@@ -22,11 +24,13 @@
 		<Anniv>1998-01-08</Anniv>
 	</Personne>
 	<Matieres>
-		<MatID MatiereID="p42">
-			<Note>30</Note>
-		</MatID>
+		<MatieresParAnnee Annee="2">
+			<MatID MatiereID="p42">
+				<Note>15</Note>
+			</MatID>
+		</MatieresParAnnee>
 	</Matieres>
-	<Annee>44</Annee>
+	<AnneeActuelle>4</AnneeActuelle>
 	<Cursus>Info</Cursus>
 	<Groupe>TDA</Groupe>
 	</Etudiant>
@@ -37,12 +41,14 @@
 		<Anniv>1988-10-08</Anniv>
 	</Personne>
 	<Matieres>
-		<MatID MatiereID="p97">
-			<Note>8</Note>
-			<Note>12</Note>
-		</MatID>
+		<MatieresParAnnee Annee="1">
+			<MatID MatiereID="p97">
+				<Note>8</Note>
+				<Note>12</Note>
+			</MatID>
+		</MatieresParAnnee>
 	</Matieres>
-	<Annee>45</Annee>
+	<AnneeActuelle>45</AnneeActuelle>
 	<Cursus>GC</Cursus>
 	<Groupe>TDA</Groupe>
 	</Etudiant>

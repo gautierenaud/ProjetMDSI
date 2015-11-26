@@ -4,10 +4,12 @@
 		<Nom>Info Mat</Nom>
 		<Code>toto</Code>
 		<Credit>0</Credit>
+		<UFID ufID="uf50"/>
 	</Matiere>
 	<Matiere ID="f42">
 		<Nom>Info Mat</Nom>
 		<Code>toto</Code>
 		<Credit>0</Credit>
+		<UFID ufID="ufprout"/>
 	</Matiere>
 </Matieres>
