@@ -1,4 +1,4 @@
-let $file := doc("../Etudiant.xml")
+let $file := doc("../BD/Etudiant.xml")
 let $anneeList := distinct-values($file//Annee)
 return
   for $annee in $anneeList
