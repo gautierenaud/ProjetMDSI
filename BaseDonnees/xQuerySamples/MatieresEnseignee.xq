@@ -1,5 +1,5 @@
-let $enseignants := doc("../Enseignant.xml")
-let $matieres := doc("../Matiere.xml")
+let $enseignants := doc("../BD/Enseignant.xml")
+let $matieres := doc("../BD/Matiere.xml")
 return
   for $enseign in $enseignants//Enseignant
   order by $enseign
