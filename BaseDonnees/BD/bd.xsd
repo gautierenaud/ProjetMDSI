@@ -15,6 +15,11 @@
 			<xsd:element name="Nom" type="xsd:string" minOccurs="1"/>
 			<xsd:element name="Code" type="xsd:string" minOccurs="1"/>
 			<xsd:element name="Credit" type="xsd:int" minOccurs="1"/>
+			<xsd:element name="UFID">
+				<xsd:complexType>
+				<xsd:attribute name="ufID" type="xsd:string"/>
+				</xsd:complexType>
+			</xsd:element>
 		</xsd:sequence>
 		<xsd:attribute name="ID" type="xsd:ID"/>
 	</xsd:complexType>
@@ -42,6 +47,40 @@
 		</xsd:complexType>
 	</xsd:element>
 	
+	<xsd:element name="ListCursus">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Cursus" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="Cursus">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="UF" maxOccurs="6"/>
+			</xsd:sequence>
+			<xsd:attribute name="CursusName" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="UF">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="MatID" minOccurs="1" maxOccurs="3"/>
+			</xsd:sequence>
+			<xsd:attribute name="ID" type="xsd:ID"/>
+		</xsd:complexType>
+		<xsd:keyref name="UFmatiereRef" refer="MatiereKey">
+			<xsd:selector xpath="Matieres/Matiere" />
+			<xsd:field xpath="MatID/@MatiereID" />
+		</xsd:keyref>
+		<xsd:key name="UFKey">
+			<xsd:selector xpath="ListCursus/Cursus/UF"/>
+			<xsd:field xpath="@ID" />
+		</xsd:key>
+	</xsd:element>
+	
 	<xsd:element name="Matieres">
 		<xsd:complexType>
 			<xsd:sequence>
@@ -51,6 +90,10 @@
 	</xsd:element>
 	
 	<xsd:element name="Matiere" type="type-matiere">
+		<xsd:keyref name="MatiereUFRef" refer="UFKey">
+			<xsd:selector xpath="ListCursus/Cursus/UF" />
+			<xsd:field xpath="UFID/@ufID" />
+		</xsd:keyref>
 		<xsd:key name="MatiereKey">
 			<xsd:selector xpath="Matieres/Matiere"/>
 			<xsd:field xpath="@ID" />	
@@ -61,7 +104,7 @@
 		<xsd:complexType>
 			<xsd:sequence>
 				<xsd:element name="Personne" type="type-personne" />
-				<xsd:element name="Matieres">
+				<xsd:element name="Matieres">  
 					<xsd:complexType>
 						<xsd:sequence minOccurs="0" maxOccurs="unbounded">
 							<xsd:element name="MatID" >
