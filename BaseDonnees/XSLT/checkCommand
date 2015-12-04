@@ -1,0 +1,1 @@
+xsltproc -output nom_fichier_output.extension_de_sortie feuille_xslt.xsl document_input.xml

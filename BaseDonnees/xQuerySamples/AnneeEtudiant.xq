@@ -1,12 +1,17 @@
-let $file := doc("../BD/Etudiant.xml")
-let $anneeList := distinct-values($file//Annee)
+let $etudiants := doc("../BD/Etudiant.xml")
+let $anneeList := distinct-values($etudiants//AnneeActuelle)
 return
+<ans>
+{
   for $annee in $anneeList
   return
-    <annee name="{$annee}">{
-     for $etud in $file//Etudiant
-     where $etud/Annee/text()=$annee
+    <annee name="{$annee}">
+    {
+     for $etud in $etudiants//Etudiant
+     where $etud/AnneeActuelle/text()=$annee
      return
        $etud 
     }
     </annee>
+}
+</ans>
