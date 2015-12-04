@@ -11,14 +11,14 @@
 				<p>Année: <xsl:value-of select="@name" /></p>
 				<ul>
 					<xsl:for-each select="Etudiant">
-						<li><xsl:value-of select="Personne/Nom" /></li>
+						<li><xsl:apply-templates select="." /></li>
 					</xsl:for-each>
 				</ul>
 			</xsl:for-each>
 		</body>
 	</html>
 </xsl:template>
-<xsl:template match="Personne">
-	<xsl:value-of select="//Nom" />
+<xsl:template match="Etudiant">
+	<xsl:value-of select="Personne/Nom" /><xsl:text> </xsl:text><xsl:value-of select="Personne/Prenom" />, <xsl:value-of select="Cursus" />
 </xsl:template>
 </xsl:stylesheet>
