@@ -9,4 +9,13 @@
 			<MatID ID="f42" />
 		</UF>
 	</Cursus>
+	<Cursus CursusName="Meca">
+		<UF ID="U42">
+			<MatID ID="p42" />
+			<MatID ID="o42" />
+		</UF>
+		<UF ID="Z42">
+			<MatID ID="f42" />
+		</UF>
+	</Cursus>
 </ListCursus>

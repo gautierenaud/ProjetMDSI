@@ -1,7 +1,15 @@
 Splitter la base de donnée: Etudiant.xml, Enseignant.xml, Matiere.xml
 faire les xsd associés, voir comment "linker" les xsd entre eux, pour pouvoir utiliser les clefs de Matiere
 faire les requêtes xQuery du pdf
-
+Fait!!!! (pas tout... )
 -->bd.xsd 
 	-->Cursus (l56)
-		-->CursusName : ajouter contraintes < {Info, Math, GP, GC, itou itou}
+		-->CursusName : ajouter contraintes < {Info, Math, GP, GC, itou itou}>>>Fait! 
+		
+		
+		Liste des matieres enseignées par prof                ==> fait cf MatiereEnseignee.xq
+		Liste des enseignants enseignant une certaine matiere ==> inverse de precedent
+		Etudiant par année                                    ==> AnneeEtudiant.xq
+		Etudiant par cursus                                   ==> CursusEtudiant.xq
+		Enseignant par Groupe                                 ==> EnseignantParGroupe.xq
+		liste des notes et matiere par etudiant               ==> dans etudiant + jointure matiere 
