@@ -55,13 +55,30 @@
 		</xsd:complexType>
 	</xsd:element>
 	
+	<xsd:simpleType name="CursusType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Info"/>
+			<xsd:enumeration value="Math"/>
+			<xsd:enumeration value="Civil"/>
+			<xsd:enumeration value="Meca"/>
+			<xsd:enumeration value="BioC"/>
+			<xsd:enumeration value="ProC"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
 	<xsd:element name="Cursus">
 		<xsd:complexType>
 			<xsd:sequence>
 				<xsd:element ref="UF" maxOccurs="6"/>
 			</xsd:sequence>
-			<xsd:attribute name="CursusName" type="xsd:string"/>
+			<xsd:attribute name="CursusName" type="CursusType">
+				
+			</xsd:attribute>
 		</xsd:complexType>
+		<xsd:key name="CursusKey">
+			<xsd:selector xpath="ListCursus/Cursus"/>
+			<xsd:field xpath="@CursusName"/>
+		</xsd:key>
 	</xsd:element>
 	
 	<xsd:element name="UF">
@@ -130,7 +147,15 @@
 					</xsd:keyref>
 				</xsd:element>
 				<xsd:element name="AnneeActuelle" type="xsd:int"/>
-				<xsd:element name="Cursus" type="xsd:string"/>
+				<xsd:element name="Cursus">
+					<xsd:complexType>
+						<xsd:attribute name="CursusName" type="CursusType" />
+					</xsd:complexType>
+						<xsd:keyref name="CursusRef" refer="CursusKey">
+							<xsd:selector xpath="ListCursus/Cursus" />
+							<xsd:field xpath="Cursus/@CursusName" />
+						</xsd:keyref>
+				</xsd:element>
 				<xsd:element name="Groupe" type="xsd:string"/>
 			</xsd:sequence>
 		</xsd:complexType>

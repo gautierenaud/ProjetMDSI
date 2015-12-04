@@ -1,4 +1,4 @@
-let $file := doc("../Etudiant.xml")
+let $file := doc("../BD/Etudiant.xml")
 let $cursusList := distinct-values($file//Cursus)
 return
   for $cursus in $cursusList
