@@ -14,7 +14,7 @@
         </MatieresParAnnee>
       </Matieres>
       <AnneeActuelle>5</AnneeActuelle>
-      <Cursus>Info</Cursus>
+      <Cursus CursusName="Info"/>
       <Groupe>TDA</Groupe>
     </Etudiant>
   </annee>
@@ -33,7 +33,7 @@
         </MatieresParAnnee>
       </Matieres>
       <AnneeActuelle>4</AnneeActuelle>
-      <Cursus>Info</Cursus>
+      <Cursus CursusName="Info"/>
       <Groupe>TDA</Groupe>
     </Etudiant>
   </annee>
@@ -53,7 +53,7 @@
         </MatieresParAnnee>
       </Matieres>
       <AnneeActuelle>45</AnneeActuelle>
-      <Cursus>GC</Cursus>
+      <Cursus CursusName="Meca"/>
       <Groupe>TDA</Groupe>
     </Etudiant>
   </annee>

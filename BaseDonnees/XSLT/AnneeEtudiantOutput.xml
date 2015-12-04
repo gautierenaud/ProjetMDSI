@@ -14,24 +14,7 @@
         </MatieresParAnnee>
       </Matieres>
       <AnneeActuelle>5</AnneeActuelle>
-      <Cursus>Info</Cursus>
-      <Groupe>TDA</Groupe>
-    </Etudiant>
-    <Etudiant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <Personne ID="lb55">
-        <Nom>Bastien</Nom>
-        <Prenom>Delegue</Prenom>
-        <Anniv>1998-01-08</Anniv>
-      </Personne>
-      <Matieres>
-        <MatieresParAnnee Annee="2">
-          <MatID MatiereID="p42">
-            <Note>15</Note>
-          </MatID>
-        </MatieresParAnnee>
-      </Matieres>
-      <AnneeActuelle>4</AnneeActuelle>
-      <Cursus>Info</Cursus>
+      <Cursus CursusName="Info"/>
       <Groupe>TDA</Groupe>
     </Etudiant>
   </annee>
@@ -50,7 +33,7 @@
         </MatieresParAnnee>
       </Matieres>
       <AnneeActuelle>4</AnneeActuelle>
-      <Cursus>Info</Cursus>
+      <Cursus CursusName="Info"/>
       <Groupe>TDA</Groupe>
     </Etudiant>
   </annee>
@@ -70,7 +53,7 @@
         </MatieresParAnnee>
       </Matieres>
       <AnneeActuelle>45</AnneeActuelle>
-      <Cursus>GC</Cursus>
+      <Cursus CursusName="Meca"/>
       <Groupe>TDA</Groupe>
     </Etudiant>
   </annee>

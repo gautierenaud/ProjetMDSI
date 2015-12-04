@@ -1,11 +1,12 @@
 let $file := doc("../BD/Etudiant.xml")
-let $cursusList := distinct-values($file//Cursus)
+let $cursus := doc("../BD/ListCursus.xml")
+let $cursusList := distinct-values($cursus//Cursus/@CursusName)
 return
   for $cursus in $cursusList
   return
     <cursus name="{$cursus}">{
      for $etud in $file//Etudiant
-     where $etud/Cursus/text()=$cursus
+     where $etud/Cursus/@CursusName=$cursus
      return
        $etud 
     }
