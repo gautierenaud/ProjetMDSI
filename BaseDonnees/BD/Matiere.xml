@@ -3,13 +3,19 @@
 	<Matiere ID="p42">
 		<Nom>Info Mat</Nom>
 		<Code>toto</Code>
-		<Credit>0</Credit>
+		<Credit>5</Credit>
 		<UFID ufID="uf50"/>
 	</Matiere>
 	<Matiere ID="f42">
-		<Nom>Info Mat</Nom>
+		<Nom>Construction</Nom>
 		<Code>toto</Code>
-		<Credit>0</Credit>
+		<Credit>3</Credit>
 		<UFID ufID="ufprout"/>
+	</Matiere>
+	<Matiere ID="h57">
+		<Nom>Judo</Nom>
+		<Code>judo</Code>
+		<Credit>2</Credit>
+		<UFID ufID="uf50"/>
 	</Matiere>
 </Matieres>

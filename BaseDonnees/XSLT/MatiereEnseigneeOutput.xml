@@ -1,0 +1,48 @@
+<ans>
+  <Enseignant>
+    <Personne xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="tgv2596">
+      <Nom>Bergerac</Nom>
+      <Prenom>Cyrano</Prenom>
+      <Anniv>1897-08-08</Anniv>
+    </Personne>
+  </Enseignant>
+  <Enseignant>
+    <Personne xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="fl98">
+      <Nom>La Botlanne</Nom>
+      <Prenom>Didiette</Prenom>
+      <Anniv>1800-10-18</Anniv>
+    </Personne>
+  </Enseignant>
+  <Enseignant>
+    <Personne xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="lb54">
+      <Nom>Le Botlan</Nom>
+      <Prenom>Didier</Prenom>
+      <Anniv>1998-08-08</Anniv>
+    </Personne>
+    <Matiere xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="p42">
+      <Nom>Info Mat</Nom>
+      <Code>toto</Code>
+      <Credit>5</Credit>
+      <UFID ufID="uf50"/>
+    </Matiere>
+  </Enseignant>
+  <Enseignant>
+    <Personne xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="m2005">
+      <Nom>Tomtom</Nom>
+      <Prenom>Motmot</Prenom>
+      <Anniv>1998-10-08</Anniv>
+    </Personne>
+    <Matiere xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="p42">
+      <Nom>Info Mat</Nom>
+      <Code>toto</Code>
+      <Credit>5</Credit>
+      <UFID ufID="uf50"/>
+    </Matiere>
+    <Matiere xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="h57">
+      <Nom>Judo</Nom>
+      <Code>judo</Code>
+      <Credit>2</Credit>
+      <UFID ufID="uf50"/>
+    </Matiere>
+  </Enseignant>
+</ans>

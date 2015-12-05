@@ -6,9 +6,8 @@ let $matieres := doc("../BD/Matiere.xml")
 
 let $anneeList := distinct-values($etudiants//Annee)
 
-for $annee in $anneeList,
-    $etudiant in $etudiants,
+for $etudiant in $etudiants,
     $enseignant in $enseignants,
     $matiere in $matieres
 return
-  $etudiant/Personne
+  $matiere

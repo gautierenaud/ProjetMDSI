@@ -1,5 +1,5 @@
 <ans>
-  <annee name="5">
+  <cursus name="Info">
     <Etudiant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <Personne ID="lb54">
         <Nom>Le Botlan</Nom>
@@ -14,11 +14,9 @@
         </MatieresParAnnee>
       </Matieres>
       <AnneeActuelle>5</AnneeActuelle>
-      <Cursus>Info</Cursus>
+      <Cursus CursusName="Info"/>
       <Groupe>TDA</Groupe>
     </Etudiant>
-  </annee>
-  <annee name="4">
     <Etudiant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <Personne ID="lb55">
         <Nom>Bastien</Nom>
@@ -33,11 +31,11 @@
         </MatieresParAnnee>
       </Matieres>
       <AnneeActuelle>4</AnneeActuelle>
-      <Cursus>Info</Cursus>
+      <Cursus CursusName="Info"/>
       <Groupe>TDA</Groupe>
     </Etudiant>
-  </annee>
-  <annee name="45">
+  </cursus>
+  <cursus name="Meca">
     <Etudiant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <Personne ID="lb56">
         <Nom>Truc</Nom>
@@ -53,8 +51,8 @@
         </MatieresParAnnee>
       </Matieres>
       <AnneeActuelle>45</AnneeActuelle>
-      <Cursus>GC</Cursus>
+      <Cursus CursusName="Meca"/>
       <Groupe>TDA</Groupe>
     </Etudiant>
-  </annee>
+  </cursus>
 </ans>
