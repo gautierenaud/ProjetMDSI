@@ -11,4 +11,7 @@ for $annee in $anneeList,
     $enseignant in $enseignants,
     $matiere in $matieres
 return
-  $etudiant/Personne
+<ans>
+  {$etudiant/Personne}
+</ans>
+  

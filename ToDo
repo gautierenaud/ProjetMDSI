@@ -8,7 +8,7 @@ Fait!!!! (pas tout... )
 		
 		
 		Liste des matieres enseignées par prof                ==> fait cf MatiereEnseignee.xq
-		Liste des enseignants enseignant une certaine matiere ==> inverse de precedent
+		Liste des enseignants enseignant une certaine matiere ==> EnseignantMatiere.xq
 		Etudiant par année                                    ==> AnneeEtudiant.xq
 		Etudiant par cursus                                   ==> CursusEtudiant.xq
 		Enseignant par Groupe                                 ==> EnseignantParGroupe.xq
