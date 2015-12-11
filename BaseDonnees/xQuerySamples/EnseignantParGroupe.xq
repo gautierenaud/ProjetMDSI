@@ -10,4 +10,9 @@ for $etudiant in $etudiants,
     $enseignant in $enseignants,
     $matiere in $matieres
 return
-  $matiere
+
+<ans>
+  {$etudiant/Personne}
+</ans>
+  
+
