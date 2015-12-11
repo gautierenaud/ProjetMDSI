@@ -19,6 +19,6 @@
 	</html>
 </xsl:template>
 <xsl:template match="Etudiant">
-	<xsl:value-of select="Personne/Nom" /><xsl:text> </xsl:text><xsl:value-of select="Personne/Prenom" />, <xsl:value-of select="Cursus" />
+	<xsl:value-of select="Personne/Nom" /><xsl:text> </xsl:text><xsl:value-of select="Personne/Prenom" />, <xsl:value-of select="Cursus/@CursusName" />
 </xsl:template>
 </xsl:stylesheet>

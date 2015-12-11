@@ -127,7 +127,7 @@
 							<xsd:element name="MatieresParAnnee" minOccurs="0" maxOccurs="unbounded">
 								<xsd:complexType>
 									<xsd:sequence>
-										<xsd:element name="MatID" >
+										<xsd:element name="MatID" maxOccurs="unbounded">
 											<xsd:complexType>
 												<xsd:sequence>
 													<xsd:element name="Note" type="noteInt" minOccurs="0" maxOccurs="unbounded"/>

@@ -1,0 +1,34 @@
+<ans>
+  <Etudiant>
+    <Nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Le Botlan</Nom>
+    <Prenom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Didier</Prenom>
+    <Annee value="2">
+      <Matiere name="Info Mat">
+        <Note xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">10</Note>
+      </Matiere>
+    </Annee>
+  </Etudiant>
+  <Etudiant>
+    <Nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Bastien</Nom>
+    <Prenom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Delegue</Prenom>
+    <Annee value="2">
+      <Matiere name="Info Mat">
+        <Note xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">15</Note>
+      </Matiere>
+    </Annee>
+    <Annee value="3">
+      <Matiere name="Judo">
+        <Note xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">15</Note>
+      </Matiere>
+      <Matiere name="Construction">
+        <Note xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">15</Note>
+        <Note xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">8</Note>
+      </Matiere>
+    </Annee>
+  </Etudiant>
+  <Etudiant>
+    <Nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Truc</Nom>
+    <Prenom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Chose</Prenom>
+    <Annee value="1"/>
+  </Etudiant>
+</ans>

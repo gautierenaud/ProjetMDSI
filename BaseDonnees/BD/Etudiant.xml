@@ -29,6 +29,15 @@
 				<Note>15</Note>
 			</MatID>
 		</MatieresParAnnee>
+		<MatieresParAnnee Annee="3">
+			<MatID MatiereID="h57">
+				<Note>15</Note>
+			</MatID>
+			<MatID MatiereID="f42">
+				<Note>15</Note>
+				<Note>8</Note>
+			</MatID>
+		</MatieresParAnnee>
 	</Matieres>
 	<AnneeActuelle>4</AnneeActuelle>
 	<Cursus CursusName="Info"></Cursus>
