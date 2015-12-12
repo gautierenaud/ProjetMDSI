@@ -44,21 +44,47 @@
 	<Groupe>TDA</Groupe>
 	</Etudiant>
 	<Etudiant>
-	<Personne ID="lb56">
-		<Nom>Truc</Nom>
-		<Prenom>Chose</Prenom>
-		<Anniv>1988-10-08</Anniv>
-	</Personne>
-	<Matieres>
-		<MatieresParAnnee Annee="1">
-			<MatID MatiereID="p97">
-				<Note>8</Note>
-				<Note>12</Note>
-			</MatID>
-		</MatieresParAnnee>
-	</Matieres>
-	<AnneeActuelle>45</AnneeActuelle>
-	<Cursus CursusName="Meca"></Cursus>
-	<Groupe>TDA</Groupe>
+		<Personne ID="lb56">
+			<Nom>Truc</Nom>
+			<Prenom>Chose</Prenom>
+			<Anniv>1988-10-08</Anniv>
+		</Personne>
+		<Matieres>
+			<MatieresParAnnee Annee="1">
+				<MatID MatiereID="p97">
+					<Note>8</Note>
+					<Note>12</Note>
+				</MatID>
+			</MatieresParAnnee>
+		</Matieres>
+		<AnneeActuelle>1</AnneeActuelle>
+		<Cursus CursusName="Meca"></Cursus>
+		<Groupe>TDA</Groupe>
+	</Etudiant>
+	<Etudiant>
+		<Personne ID="en78">
+			<Nom>Endette</Nom>
+			<Prenom>Jusqocou</Prenom>
+			<Anniv>1964-10-10</Anniv>
+		</Personne>
+		<Matieres>
+			<MatieresParAnnee Annee="1">
+				<MatID MatiereID="p97">
+					<Note>8</Note>
+					<Note>12</Note>
+					<Note>4</Note>
+				</MatID>
+			</MatieresParAnnee>
+			<MatieresParAnnee Annee="2">
+				<MatID MatiereID="h57">
+					<Note>2</Note>
+					<Note>2</Note>
+					<Note>4</Note>
+				</MatID>
+			</MatieresParAnnee>
+		</Matieres>
+		<AnneeActuelle>1</AnneeActuelle>
+		<Cursus CursusName="Meca"></Cursus>
+		<Groupe>TDA</Groupe>
 	</Etudiant>
 </Etudiants>

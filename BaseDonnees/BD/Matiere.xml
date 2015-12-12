@@ -18,4 +18,10 @@
 		<Credit>2</Credit>
 		<UFID ufID="uf50"/>
 	</Matiere>
+	<Matiere ID="p97">
+		<Nom>PPI</Nom>
+		<Code>ppi</Code>
+		<Credit>2</Credit>
+		<UFID ufID="uf50"/>
+	</Matiere>
 </Matieres>
