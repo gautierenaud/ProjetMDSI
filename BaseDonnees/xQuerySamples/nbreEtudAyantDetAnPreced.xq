@@ -11,9 +11,9 @@ return
             and sum($matID/Note) div count($matID/Note) <10
              return 
               $etudiant                                         
-          let $listEtudAvDet := distinct-values($etudiantAvecDet/Personne/Nom)
+          let $listEtudAvDet := count($etudiantAvecDet/Personne/Nom)
           return $listEtudAvDet
            
     }
      </etudiants>
- </ans
+ </ans>
