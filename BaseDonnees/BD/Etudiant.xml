@@ -10,6 +10,8 @@
 			<MatieresParAnnee Annee="2">
 				<MatID MatiereID="p42">
 					<Note>10</Note>
+					<Note>5</Note>
+					
 				</MatID>
 			</MatieresParAnnee>
 		</Matieres>
@@ -27,11 +29,13 @@
 		<MatieresParAnnee Annee="2">
 			<MatID MatiereID="p42">
 				<Note>15</Note>
+				<Note>15</Note>
 			</MatID>
 		</MatieresParAnnee>
 		<MatieresParAnnee Annee="3">
 			<MatID MatiereID="h57">
 				<Note>15</Note>
+				<Note>4</Note>
 			</MatID>
 			<MatID MatiereID="f42">
 				<Note>15</Note>

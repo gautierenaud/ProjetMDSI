@@ -7,9 +7,14 @@ Fait!!!! (pas tout... )
 		-->CursusName : ajouter contraintes < {Info, Math, GP, GC, itou itou}>>>Fait! 
 		
 		
-		Liste des matieres enseignées par prof                ==> fait cf MatiereEnseignee.xq
-		Liste des enseignants enseignant une certaine matiere ==> EnseignantMatiere.xq
-		Etudiant par année                                    ==> AnneeEtudiant.xq
-		Etudiant par cursus                                   ==> CursusEtudiant.xq
-		Enseignant par Groupe                                 ==> EnseignantParGroupe.xq
-		liste des notes et matiere par etudiant               ==> dans etudiant + jointure matiere 
+		- Liste des matieres enseignées par prof                					==> fait cf MatiereEnseignee.xq
+		- Liste des enseignants enseignant une certaine matiere 					==> EnseignantMatiere.xq
+		- Etudiant par année                                    					==> AnneeEtudiant.xq
+		- Etudiant par cursus                                  					    ==> CursusEtudiant.xq
+		- Enseignant par Groupe                                 					==> EnseignantParGroupe.xq
+		- liste des notes et matiere par etudiant               					==> dans etudiant + jointure matiere 
+		- Étudiants ayant des dettes des années précédentes 
+		- Étudiants n’ayant aucune dette et ayant au moins une UF non validée 
+		- Étudiants n’ayant aucune UF non validée et deux dettes 
+		- Étudiants n’ayant aucune UF non validée et une dette 
+		- Étudiants ayant au moins 2 dettes
