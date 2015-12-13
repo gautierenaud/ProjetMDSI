@@ -7,8 +7,8 @@ return
   for $etud in $etudiants//Etudiant
   return
     <Etudiant>
-    {$etud/Personne/Nom}
-    {$etud/Personne/Prenom}
+      <Nom>{$etud/Personne/Nom/text()}</Nom>
+      <Prenom>{$etud/Personne/Prenom/text()}</Prenom>
     {
      for $matAnnee in $etud//MatieresParAnnee
      return
