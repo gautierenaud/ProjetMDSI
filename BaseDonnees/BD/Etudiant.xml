@@ -57,7 +57,7 @@
 			<MatieresParAnnee Annee="1">
 				<MatID MatiereID="p97">
 					<Note>8</Note>
-					<Note>12</Note>
+					<Note>11</Note>
 				</MatID>
 			</MatieresParAnnee>
 		</Matieres>
@@ -79,6 +79,13 @@
 					<Note>4</Note>
 				</MatID>
 			</MatieresParAnnee>
+			<MatieresParAnnee Annee="1">
+				<MatID MatiereID="f42">
+					<Note>8</Note>
+					<Note>12</Note>
+					<Note>4</Note>
+				</MatID>
+			</MatieresParAnnee>
 			<MatieresParAnnee Annee="2">
 				<MatID MatiereID="h57">
 					<Note>2</Note>
@@ -87,7 +94,7 @@
 				</MatID>
 			</MatieresParAnnee>
 		</Matieres>
-		<AnneeActuelle>1</AnneeActuelle>
+		<AnneeActuelle>2</AnneeActuelle>
 		<Cursus CursusName="Meca"></Cursus>
 		<Groupe>TDA</Groupe>
 	</Etudiant>

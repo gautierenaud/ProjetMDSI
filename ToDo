@@ -11,10 +11,13 @@ Fait!!!! (pas tout... )
 		- Liste des enseignants enseignant une certaine matiere 					==> EnseignantMatiere.xq
 		- Etudiant par année                                    					==> AnneeEtudiant.xq
 		- Etudiant par cursus                                  					    ==> CursusEtudiant.xq
-		- Enseignant par Groupe                                 					==> EnseignantParGroupe.xq
-		- liste des notes et matiere par etudiant               					==> dans etudiant + jointure matiere 
-		- Étudiants ayant des dettes des années précédentes 
-		- Étudiants n’ayant aucune dette et ayant au moins une UF non validée 
-		- Étudiants n’ayant aucune UF non validée et deux dettes 
-		- Étudiants n’ayant aucune UF non validée et une dette 
-		- Étudiants ayant au moins 2 dettes
+		- Etudiant par groupe														==> GroupeEtudiant.xq
+		- Enseignant par Groupe                                 					==> EnseignantParGroupe.xq à faire /!\
+		- liste des notes et matiere par etudiant               					==> MatiereEtudiant.xq et NoteEtudiant.xq
+		- Étudiants ayant des dettes des années précédentes 						==> etudiantAyantDettesAnneePreced.xq 
+		- Étudiants	ayant des dettes et des UF non validé							==> DetteEtudiant.xq  
+		- Étudiants n’ayant aucune dette et ayant au moins une UF non validée 		==> etudSansDetEtUFnonValid.xq 
+		- Nombre d'étudiants ayant des dettes des années precedentes				==> nbreEtudAyantDetAnPreced.xq
+		- Étudiants n’ayant aucune UF non validée et deux dettes 					==>  à faire /!\
+		- Étudiants n’ayant aucune UF non validée et une dette 						==>  à faire /!\
+		- Étudiants ayant au moins 2 dettes											==>  à faire /!\
