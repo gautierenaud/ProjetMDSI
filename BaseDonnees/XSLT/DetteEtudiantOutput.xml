@@ -3,37 +3,47 @@
     <Nom>Le Botlan</Nom>
     <Prenom>Didier</Prenom>
     <Annee valeur="2">
-      <MoyenneGenerale>7.5</MoyenneGenerale>
+      <Matiere>
+        <Nom>Info Mat</Nom>
+        <Moyenne>7.5</Moyenne>
+      </Matiere>
     </Annee>
   </Etudiant>
   <Etudiant id="lb55">
     <Nom>Bastien</Nom>
     <Prenom>Delegue</Prenom>
-    <Annee valeur="2">
-      <MoyenneGenerale>15</MoyenneGenerale>
-    </Annee>
+    <Annee valeur="2"/>
     <Annee valeur="3">
-      <MoyenneGenerale>10.5</MoyenneGenerale>
+      <Matiere>
+        <Nom>Judo</Nom>
+        <Moyenne>9.5</Moyenne>
+      </Matiere>
     </Annee>
   </Etudiant>
   <Etudiant id="lb56">
     <Nom>Truc</Nom>
     <Prenom>Chose</Prenom>
     <Annee valeur="1">
-      <MoyenneGenerale>9.5</MoyenneGenerale>
+      <Matiere>
+        <Nom>PPI</Nom>
+        <Moyenne>9.5</Moyenne>
+      </Matiere>
     </Annee>
   </Etudiant>
   <Etudiant id="en78">
     <Nom>Endette</Nom>
     <Prenom>Jusqocou</Prenom>
     <Annee valeur="1">
-      <MoyenneGenerale>8</MoyenneGenerale>
-    </Annee>
-    <Annee valeur="1">
-      <MoyenneGenerale>8</MoyenneGenerale>
+      <Matiere>
+        <Nom>PPI</Nom>
+        <Moyenne>8</Moyenne>
+      </Matiere>
     </Annee>
     <Annee valeur="2">
-      <MoyenneGenerale>2.6666666666666665</MoyenneGenerale>
+      <Matiere>
+        <Nom>Judo</Nom>
+        <Moyenne>2.6666666666666665</Moyenne>
+      </Matiere>
     </Annee>
   </Etudiant>
 </ans>

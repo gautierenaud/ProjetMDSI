@@ -6,7 +6,7 @@ return
 {
   for $etud in $etudiants//Etudiant
   return
-    <Etudiant>
+    <Etudiant id="{$etud/Personne/@ID}">
       <Nom>{$etud/Personne/Nom/text()}</Nom>
       <Prenom>{$etud/Personne/Prenom/text()}</Prenom>
     {
