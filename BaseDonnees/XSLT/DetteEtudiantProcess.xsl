@@ -25,7 +25,6 @@
 							<xsl:for-each select="Matiere">
 								<li><xsl:value-of select="Nom"/><xsl:text>: </xsl:text><xsl:value-of select="Moyenne" /></li>
 							</xsl:for-each>
-							<li role="separator" class="divider"></li>
 						</xsl:for-each>
 					</ul>
 				</div>
