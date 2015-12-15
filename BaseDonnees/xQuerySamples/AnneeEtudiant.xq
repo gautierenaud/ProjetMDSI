@@ -4,13 +4,16 @@ return
 <ans>
 {
   for $annee in $anneeList
+  
   return
     <annee name="{$annee}">
     {
      for $etud in $etudiants//Etudiant
      where $etud/AnneeActuelle/text()=$annee
      return
-       $etud 
+     <Etudiant>
+       {$etud/Personne}
+     </Etudiant>
     }
     </annee>
 }

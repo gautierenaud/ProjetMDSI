@@ -24,15 +24,19 @@ var sideBar = $(".sidebar-nav");
 function loadSideBar(id){
     sideBar.empty();
     var tmpList;
+    var tmpLinkList;
     switch (id){
         case "Enseignants":
             tmpList = enseignantSideOptions;
+            tmpLinkList = enseignantLink;
             break;
         case "Etudiants":
             tmpList = etudiantSideOptions;
+            tmpLinkList = etudiantLink;
             break;
         case "Matieres":
             tmpList = matiereSideOptions;
+            tmpLinkList = matiereLink;
             break;
         default:
             alert("Wrong ID: " + id);
@@ -43,7 +47,7 @@ function loadSideBar(id){
     sideBar.append("<li class='sidebar-brand'><a>" + id + "</a></li>");
     // load the content of the list
     for (var i in tmpList){
-        sideBar.append("<li><a href='#'>" + tmpList[i] + "</a></li>");
+        sideBar.append("<li><a href='" + tmpLinkList[i] + "'>" + tmpList[i] + "</a></li>");
     }
 }
 

@@ -28,10 +28,8 @@
 	<xsl:for-each select="/ans/annee">
 		<xsl:choose>
 			<xsl:when test="contains(. , Etudiant)">
-				<td>O</td>
 			</xsl:when>
 			<xsl:otherwise>
-				<td>X</td>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:for-each>

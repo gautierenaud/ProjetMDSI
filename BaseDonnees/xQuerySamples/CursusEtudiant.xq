@@ -10,8 +10,11 @@ return
      for $etud in $file//Etudiant
      where $etud/Cursus/@CursusName=$cursus
      return
-       $etud 
-    }
-    </cursus>
+       <Etudiant>
+         <Nom>{$etud/Personne/Nom/text()}</Nom>
+         <Prenom>{$etud/Personne/Prenom/text()}</Prenom>
+       </Etudiant>
+     }
+     </cursus>
 }
 </ans>

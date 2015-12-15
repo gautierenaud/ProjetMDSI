@@ -1,0 +1,50 @@
+<ans>
+  <Etudiant>
+    <Nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Le Botlan</Nom>
+    <Prenom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Didier</Prenom>
+    <Annee valeur="1">
+      <Matiere>Info Mat</Matiere>
+      <Matiere>COO</Matiere>
+    </Annee>
+    <Annee valeur="2">
+      <Matiere>Info Mat</Matiere>
+    </Annee>
+    <Annee valeur="3">
+      <Matiere>Programmation Fonctionnelle</Matiere>
+    </Annee>
+    <Annee valeur="4">
+      <Matiere>Judo</Matiere>
+    </Annee>
+    <Annee valeur="5">
+      <Matiere>Info Mat</Matiere>
+    </Annee>
+  </Etudiant>
+  <Etudiant>
+    <Nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Bastien</Nom>
+    <Prenom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Delegue</Prenom>
+    <Annee valeur="2">
+      <Matiere>Info Mat</Matiere>
+    </Annee>
+    <Annee valeur="3">
+      <Matiere>Judo</Matiere>
+      <Matiere>Construction</Matiere>
+    </Annee>
+  </Etudiant>
+  <Etudiant>
+    <Nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Truc</Nom>
+    <Prenom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Chose</Prenom>
+    <Annee valeur="1">
+      <Matiere>PPI</Matiere>
+    </Annee>
+  </Etudiant>
+  <Etudiant>
+    <Nom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Endette</Nom>
+    <Prenom xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Jusqocou</Prenom>
+    <Annee valeur="1">
+      <Matiere>PPI</Matiere>
+    </Annee>
+    <Annee valeur="2">
+      <Matiere>Judo</Matiere>
+    </Annee>
+  </Etudiant>
+</ans>

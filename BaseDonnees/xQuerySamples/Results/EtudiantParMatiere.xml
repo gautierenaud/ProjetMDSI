@@ -1,0 +1,72 @@
+<ans>
+  <Matiere>
+    <Name>Info Mat</Name>
+    <Etudiants>
+      <Etudiant>
+        <Nom>Le Botlan</Nom>
+        <Prenom>Didier</Prenom>
+      </Etudiant>
+      <Etudiant>
+        <Nom>Bastien</Nom>
+        <Prenom>Delegue</Prenom>
+      </Etudiant>
+    </Etudiants>
+  </Matiere>
+  <Matiere>
+    <Name>Construction</Name>
+    <Etudiants>
+      <Etudiant>
+        <Nom>Bastien</Nom>
+        <Prenom>Delegue</Prenom>
+      </Etudiant>
+    </Etudiants>
+  </Matiere>
+  <Matiere>
+    <Name>Judo</Name>
+    <Etudiants>
+      <Etudiant>
+        <Nom>Le Botlan</Nom>
+        <Prenom>Didier</Prenom>
+      </Etudiant>
+      <Etudiant>
+        <Nom>Bastien</Nom>
+        <Prenom>Delegue</Prenom>
+      </Etudiant>
+      <Etudiant>
+        <Nom>Endette</Nom>
+        <Prenom>Jusqocou</Prenom>
+      </Etudiant>
+    </Etudiants>
+  </Matiere>
+  <Matiere>
+    <Name>PPI</Name>
+    <Etudiants>
+      <Etudiant>
+        <Nom>Truc</Nom>
+        <Prenom>Chose</Prenom>
+      </Etudiant>
+      <Etudiant>
+        <Nom>Endette</Nom>
+        <Prenom>Jusqocou</Prenom>
+      </Etudiant>
+    </Etudiants>
+  </Matiere>
+  <Matiere>
+    <Name>Programmation Fonctionnelle</Name>
+    <Etudiants>
+      <Etudiant>
+        <Nom>Le Botlan</Nom>
+        <Prenom>Didier</Prenom>
+      </Etudiant>
+    </Etudiants>
+  </Matiere>
+  <Matiere>
+    <Name>COO</Name>
+    <Etudiants>
+      <Etudiant>
+        <Nom>Le Botlan</Nom>
+        <Prenom>Didier</Prenom>
+      </Etudiant>
+    </Etudiants>
+  </Matiere>
+</ans>

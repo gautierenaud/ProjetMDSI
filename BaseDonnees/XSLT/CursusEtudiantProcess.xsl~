@@ -22,7 +22,7 @@
 						<xsl:if test="count(Etudiant)!=0">
 						<ul>
 							<xsl:for-each select="Etudiant">
-								<xsl:apply-templates select="." />
+								<xsl:apply-templates />
 							</xsl:for-each>
 						</ul>
 						</xsl:if>

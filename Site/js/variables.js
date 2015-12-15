@@ -3,9 +3,12 @@
  */
 // liste des options disponibles dans le menu pour Enseignants
 var enseignantSideOptions = ["Matières Enseignées", "Par Matière", "Par Groupe", "Par Année", "Par Cursus"];
+var enseignantLink = ["#","#","#","#","#"];
 
 // liste des options disponibles dans le menu pour les étudiants
-var etudiantSideOptions = ["Matières Suivies", "Par Matière", "Par Groupe", "Par Année", "Par Cursus", "Par Dettes"];
+var etudiantSideOptions = ["Matières Suivies", "Par Matière", "Par Moyenne", "Par Groupe", "Par Année", "Par Cursus", "Par Dettes"];
+var etudiantLink = ["matiereEtud.html", "etudParMat.html", "moyenneGene.html", "#","#","cursusEtud.html","detteEtud.html"];
 
 // liste des options pour les matières
 var matiereSideOptions = ["Par UF"];
+var matiereLink = ["#"];
