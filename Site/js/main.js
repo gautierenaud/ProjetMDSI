@@ -51,18 +51,20 @@ function initContent(){
     loadSideBar(actualActiveNavbar);
 }
 
-function LineChart(id) {
-    var x = document.getElementById(id);
-    if (flag) {
+function LineChart(id, listMoyenne, listAnnee) {
+    if (listMoyenne.length == listAnnee.length) {
+        var x = document.getElementById(id);
         var data = new google.visualization.DataTable();
-        data.addColumn ('string', 'Day');
-        data.addColumn ('number', 'Value');
-        for (i = 0; i<50 ; i++) {
-            var aLabel = "D" + i;
-            var aValue = Math.floor(Math.random() * 50);
+
+        data.addColumn ('number', 'Annee');
+        data.addColumn ('number', 'Moyenne');
+
+        for (i = 0; i < listAnnee.length; i++) {
+            var aLabel = listAnnee[i]; // mettre l'année ici
+            var aValue = listMoyenne[i]; // mettre la valeur de la moyenne
             data.addRows([[aLabel, aValue]]);
         }
-        var options =   {legend:'none', curveType:'function', colors:['red','#004411']};
+        var options = {legend: 'none', curveType: 'function', colors: ['red', '#004411']};
         var chart = new google.visualization.LineChart(x);
         chart.draw(data, options);
     }

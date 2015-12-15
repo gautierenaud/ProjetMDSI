@@ -24,4 +24,16 @@
 		<Credit>2</Credit>
 		<UFID ufID="uf50"/>
 	</Matiere>
+	<Matiere ID="pf10">
+		<Nom>Programmation Fonctionnelle</Nom>
+		<Code>prgmFonc</Code>
+		<Credit>1</Credit>
+		<UFID ufID="uf50"/>
+	</Matiere>
+	<Matiere ID="c00">
+		<Nom>COO</Nom>
+		<Code>coo</Code>
+		<Credit>5</Credit>
+		<UFID ufID="uf50"/>
+	</Matiere>
 </Matieres>

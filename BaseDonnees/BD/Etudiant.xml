@@ -7,11 +7,38 @@
 			<Anniv>1998-08-08</Anniv>
 		</Personne>
 		<Matieres>
-			<MatieresParAnnee Annee="2">
+			<MatieresParAnnee Annee="1">
 				<MatID MatiereID="p42">
 					<Note>10</Note>
 					<Note>5</Note>
-					
+				</MatID>
+				<MatID MatiereID="c00">
+					<Note>12</Note>
+					<Note>8</Note>
+				</MatID>
+			</MatieresParAnnee>
+			<MatieresParAnnee Annee="2">
+				<MatID MatiereID="p42">
+					<Note>12</Note>
+					<Note>14</Note>
+				</MatID>
+			</MatieresParAnnee>
+			<MatieresParAnnee Annee="3">
+				<MatID MatiereID="pf10">
+					<Note>15</Note>
+					<Note>20</Note>
+				</MatID>
+			</MatieresParAnnee>
+			<MatieresParAnnee Annee="4">
+				<MatID MatiereID="h57">
+					<Note>11</Note>
+					<Note>8</Note>
+				</MatID>
+			</MatieresParAnnee>
+			<MatieresParAnnee Annee="5">
+				<MatID MatiereID="p42">
+					<Note>10</Note>
+					<Note>16</Note>
 				</MatID>
 			</MatieresParAnnee>
 		</Matieres>

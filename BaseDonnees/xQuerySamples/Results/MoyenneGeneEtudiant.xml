@@ -2,8 +2,20 @@
   <Etudiant id="lb54">
     <Nom>Le Botlan</Nom>
     <Prenom>Didier</Prenom>
+    <Annee valeur="1">
+      <MoyenneGenerale>8.75</MoyenneGenerale>
+    </Annee>
     <Annee valeur="2">
-      <MoyenneGenerale>7.5</MoyenneGenerale>
+      <MoyenneGenerale>13</MoyenneGenerale>
+    </Annee>
+    <Annee valeur="3">
+      <MoyenneGenerale>17.5</MoyenneGenerale>
+    </Annee>
+    <Annee valeur="4">
+      <MoyenneGenerale>9.5</MoyenneGenerale>
+    </Annee>
+    <Annee valeur="5">
+      <MoyenneGenerale>13</MoyenneGenerale>
     </Annee>
   </Etudiant>
   <Etudiant id="lb55">

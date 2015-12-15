@@ -19,13 +19,16 @@
 					<xsl:value-of select="@id"/>
 				</xsl:attribute>
 				<div class="accordion-inner">
-					<ul>
+					<script>
+						var listAnnee = [];
+						var listMoyenne = [];
 						<xsl:for-each select="Annee">
-							<xsl:for-each select="Matiere">
-								<li><xsl:value-of select="Nom"/><xsl:text>: </xsl:text><xsl:value-of select="Moyenne" /></li>
-							</xsl:for-each>
+							listAnnee.push(<xsl:value-of select="@valeur" />);
+							listMoyenne.push(<xsl:value-of select="MoyenneGenerale/text()" />);
 						</xsl:for-each>
-					</ul>
+						
+						LineChart("<xsl:value-of select="@id"/>", listMoyenne, listAnnee);
+					</script>
 				</div>
 			</div>
 		</div>
