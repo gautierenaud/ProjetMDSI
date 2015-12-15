@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href= "enseig1MatProcess.xsl" ?>
+<ans>
+	<matiere name="Info Mat">
+	  <Personne xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="lb54">
+		<Nom>Le Botlan</Nom>
+		<Prenom>Didier</Prenom>
+		<Anniv>1998-08-08</Anniv>
+	  </Personne>
+	</matiere>
+	<matiere name="Info Mat">
+	  <Personne xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="m2005">
+		<Nom>Tomtom</Nom>
+		<Prenom>Motmot</Prenom>
+		<Anniv>1998-10-08</Anniv>
+	  </Personne>
+	</matiere>
+	<matiere name="Judo">
+	  <Personne xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="m2005">
+		<Nom>Tomtom</Nom>
+		<Prenom>Motmot</Prenom>
+		<Anniv>1998-10-08</Anniv>
+	  </Personne>
+	</matiere>
+</ans>
