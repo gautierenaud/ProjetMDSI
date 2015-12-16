@@ -1,36 +1,19 @@
-<div>
-<div class="accordion-group">
-<div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#InfoMat">Info Mat<span class="badge">2</span></a></div>
-<div class="accordion-body collapse" id="InfoMat"><div class="accordion-inner"><ul>
-<li>Le Botlan Didier</li>
-<li>Bastien Delegue</li>
-</ul></div></div>
-</div>
-<div class="accordion-group">
-<div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#Construction">Construction<span class="badge">1</span></a></div>
-<div class="accordion-body collapse" id="Construction"><div class="accordion-inner"><ul><li>Bastien Delegue</li></ul></div></div>
-</div>
-<div class="accordion-group">
-<div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#Judo">Judo<span class="badge">3</span></a></div>
-<div class="accordion-body collapse" id="Judo"><div class="accordion-inner"><ul>
-<li>Le Botlan Didier</li>
-<li>Bastien Delegue</li>
-<li>Endette Jusqocou</li>
-</ul></div></div>
-</div>
-<div class="accordion-group">
-<div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#PPI">PPI<span class="badge">2</span></a></div>
-<div class="accordion-body collapse" id="PPI"><div class="accordion-inner"><ul>
-<li>Truc Chose</li>
-<li>Endette Jusqocou</li>
-</ul></div></div>
-</div>
-<div class="accordion-group">
-<div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#ProgrammationFonctionnelle">Programmation Fonctionnelle<span class="badge">1</span></a></div>
-<div class="accordion-body collapse" id="ProgrammationFonctionnelle"><div class="accordion-inner"><ul><li>Le Botlan Didier</li></ul></div></div>
-</div>
-<div class="accordion-group">
-<div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#COO">COO<span class="badge">1</span></a></div>
-<div class="accordion-body collapse" id="COO"><div class="accordion-inner"><ul><li>Le Botlan Didier</li></ul></div></div>
-</div>
-</div>
+<div class="ColumnChartContainer"><script>
+			var listAnnee = [];
+			var listNumEtud = [];
+			
+				listAnnee.push(1);
+				listNumEtud.push(1);
+			
+				listAnnee.push(2);
+				listNumEtud.push(1);
+			
+				listAnnee.push(4);
+				listNumEtud.push(1);
+			
+				listAnnee.push(5);
+				listNumEtud.push(1);
+			
+
+			ColumnChart("ColumnChartContainer", listAnnee, listNumEtud);
+		</script></div>

@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:output method="html" encoding="UTF-8" indent="yes" />
 		<xsl:template match="/" name="main">
-		<xsl:variable name="pred" select="ans/"/>
+		<xsl:variable name="pred" select=""/>
 			<html>
 			<head>
 				<title>Enseignants par matiere</title>

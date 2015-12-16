@@ -1,4 +1,4 @@
-var actualActiveNavbar = "Enseignants";
+var actualActiveNavbar = $(".active").attr("id");
 function changeActiveNavbar(id){
     if (id != actualActiveNavbar){
         $("#"+actualActiveNavbar).removeClass("active");

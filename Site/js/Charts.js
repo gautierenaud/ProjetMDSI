@@ -10,7 +10,7 @@ function LineChart(id, listMoyenne, listAnnee) {
         data.addColumn ('number', 'Annee');
         data.addColumn ('number', 'Moyenne');
 
-        for (i = 0; i < listAnnee.length; i++) {
+        for (var i = 0; i < listAnnee.length; i++) {
             var aLabel = listAnnee[i]; // mettre l'année ici
             var aValue = listMoyenne[i]; // mettre la valeur de la moyenne
             data.addRows([[aLabel, aValue]]);
@@ -18,5 +18,21 @@ function LineChart(id, listMoyenne, listAnnee) {
         var options = {legend: 'none', curveType: 'function', colors: ['red', '#004411']};
         var chart = new google.visualization.LineChart(x);
         chart.draw(data, options);
+    }
+}
+
+function ColumnChart(id, listAnnee, listNumEtud){
+
+    if (listAnnee.length == listNumEtud.length){
+        var x = document.getElementById(id);
+        var data = new google.visualization.DataTable();
+        data.addColumn('number', 'Annee');
+        data.addColumn('number', 'Nb Etudiants');
+        for (var i = 0; i < listAnnee.length; i++){
+            data.addRow([listAnnee[i], listNumEtud[i]]);
+        }
+
+        var chart = new google.visualization.ColumnChart(x);
+        chart.draw(data);
     }
 }
