@@ -46,33 +46,33 @@
 		<Cursus CursusName="Info"></Cursus>
 		<Groupe>TDA</Groupe>
 	</Etudiant>
-	<Etudiant>
-	<Personne ID="lb55">
-		<Nom>Bastien</Nom>
-		<Prenom>Delegue</Prenom>
-		<Anniv>1998-01-08</Anniv>
-	</Personne>
-	<Matieres>
-		<MatieresParAnnee Annee="2">
-			<MatID MatiereID="p42">
-				<Note>15</Note>
-				<Note>15</Note>
-			</MatID>
-		</MatieresParAnnee>
-		<MatieresParAnnee Annee="3">
-			<MatID MatiereID="h57">
-				<Note>15</Note>
-				<Note>4</Note>
-			</MatID>
-			<MatID MatiereID="f42">
-				<Note>15</Note>
-				<Note>8</Note>
-			</MatID>
-		</MatieresParAnnee>
-	</Matieres>
-	<AnneeActuelle>4</AnneeActuelle>
-	<Cursus CursusName="Info"></Cursus>
-	<Groupe>TDA</Groupe>
+		<Etudiant>
+		<Personne ID="lb55">
+			<Nom>Bastien</Nom>
+			<Prenom>Delegue</Prenom>
+			<Anniv>1998-01-08</Anniv>
+		</Personne>
+		<Matieres>
+			<MatieresParAnnee Annee="2">
+				<MatID MatiereID="p42">
+					<Note>15</Note>
+					<Note>15</Note>
+				</MatID>
+			</MatieresParAnnee>
+			<MatieresParAnnee Annee="3">
+				<MatID MatiereID="h57">
+					<Note>15</Note>
+					<Note>4</Note>
+				</MatID>
+				<MatID MatiereID="f42">
+					<Note>15</Note>
+					<Note>8</Note>
+				</MatID>
+			</MatieresParAnnee>
+		</Matieres>
+		<AnneeActuelle>4</AnneeActuelle>
+		<Cursus CursusName="Info"></Cursus>
+		<Groupe>TDB</Groupe>
 	</Etudiant>
 	<Etudiant>
 		<Personne ID="lb56">

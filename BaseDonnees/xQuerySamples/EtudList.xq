@@ -1,4 +1,4 @@
-let $file := doc("bd.xml")
+let $file := doc("../Etudiant.xml")
 return
 <ans>
   <NbEtud>Nombre d étudiants: {$file/count(//Etudiant)}</NbEtud>
