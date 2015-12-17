@@ -16,14 +16,14 @@
 	</head>
 	<body>
 		<p>
-			<xsl:for-each select="Enseignant">
+			<xsl:for-each select="ans/Enseignant">
 				<ul>
 					<li>
 						<xsl:value-of select="Personne/Nom"/><xsl:text> </xsl:text>
 						<xsl:value-of select="Personne/Prenom"/>
 					</li>
 				</ul>
-				<xsl:if test="child = Matiere">
+				<xsl:if test="count(Matiere)!=0">
 				<xsl:for-each select="Matiere">
 					<ul>
 						<li>
@@ -36,3 +36,5 @@
 		</p>
 	</body>
 </html>
+</xsl:template>
+</xsl:stylesheet>
