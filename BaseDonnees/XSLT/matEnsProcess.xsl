@@ -2,39 +2,40 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="html" />
 <xsl:template match="/">
-<html>
-	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="author" content="Renaud" />
-		<meta name="author" content="Thomas" />
 
-		<title>Matieres enseignées</title>
+	<div>
+		<xsl:for-each select="ans/Enseignant">
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2">
+						<xsl:attribute name="href">
+							#<xsl:value-of select="translate(Personne/Nom/text(), ' ', '')" /> <xsl:value-of select="translate(Personne/Prenom/text(), ' ', '')"/>
+						</xsl:attribute>
+						<xsl:value-of select="Personne/Nom/text() "/><xsl:text> </xsl:text>
+						<xsl:value-of select="Personne/Prenom/text() "/>
+						<span class="badge"><xsl:value-of select="count(Matiere)" /></span>
+					</a>
+				</div>
+				<div class="accordion-body collapse">
+					<xsl:attribute name="id">
+						<xsl:value-of select="translate(Personne/Nom/text(), ' ', '')" />
+						<xsl:value-of select="translate(Personne/Prenom/text(), ' ', '')" />
+					</xsl:attribute>
+					<div class="accordion-inner">
+						<xsl:if test="count(Matiere)!=0">
+						<ul>
+							<xsl:for-each select="Matiere">
+								<li><xsl:value-of select="Nom/text()" /></li>
+							</xsl:for-each>
+						</ul>
+						</xsl:if>
+					</div>
+				</div>
+			</div>
+		</xsl:for-each>
+	</div>
+		
 
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-		<link href="bootstrap/css/starter-template.css" rel="stylesheet"/>
-	</head>
-	<body>
-		<p>
-			<xsl:for-each select="ans/Enseignant">
-				<ul>
-					<li>
-						<xsl:value-of select="Personne/Nom"/><xsl:text> </xsl:text>
-						<xsl:value-of select="Personne/Prenom"/>
-					</li>
-				</ul>
-				<xsl:if test="count(Matiere)!=0">
-				<xsl:for-each select="Matiere">
-					<ul>
-						<li>
-							<xsl:value-of select="Nom"/>
-						</li>
-					</ul>
-				</xsl:for-each>	
-				</xsl:if>
-			</xsl:for-each>
-		</p>
-	</body>
-</html>
 </xsl:template>
 </xsl:stylesheet>
+
