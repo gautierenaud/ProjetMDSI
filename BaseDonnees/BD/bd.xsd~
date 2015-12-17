@@ -1,0 +1,182 @@
+<?xml version ="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<xsd:complexType name="type-personne"><!--peut etre ID en attribut..  -->
+		<xsd:sequence>
+			<xsd:element name="Nom" type="xsd:string" minOccurs="1"/>
+			<xsd:element name="Prenom" type= "xsd:string" minOccurs="1"/>
+			<xsd:element name="Anniv" type ="xsd:date" minOccurs="1"/>
+		</xsd:sequence>
+		<xsd:attribute name="ID" type="xsd:ID" />
+	</xsd:complexType>
+	
+	<xsd:complexType name="type-matiere">
+		<xsd:sequence>
+			<xsd:element name="Nom" type="xsd:string" minOccurs="1"/>
+			<xsd:element name="Code" type="xsd:string" minOccurs="1"/>
+			<xsd:element name="Credit" type="xsd:int" minOccurs="1"/>
+			<xsd:element name="UFID">
+				<xsd:complexType>
+				<xsd:attribute name="ufID" type="xsd:string"/>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="ID" type="xsd:ID"/>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="noteInt">
+		<xsd:restriction base="xsd:int">	
+			<xsd:minInclusive value="0" />
+			<xsd:maxInclusive value="20" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:element name="Enseignants">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Enseignant" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="Etudiants">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Etudiant" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="ListCursus">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Cursus" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:simpleType name="CursusType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Info"/>
+			<xsd:enumeration value="Math"/>
+			<xsd:enumeration value="Civil"/>
+			<xsd:enumeration value="Meca"/>
+			<xsd:enumeration value="BioC"/>
+			<xsd:enumeration value="ProC"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:element name="Cursus">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="UF" maxOccurs="6"/>
+			</xsd:sequence>
+			<xsd:attribute name="CursusName" type="CursusType">
+				
+			</xsd:attribute>
+		</xsd:complexType>
+		<xsd:key name="CursusKey">
+			<xsd:selector xpath="ListCursus/Cursus"/>
+			<xsd:field xpath="@CursusName"/>
+		</xsd:key>
+	</xsd:element>
+	
+	<xsd:element name="UF">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="MatID" minOccurs="1" maxOccurs="3"/>
+			</xsd:sequence>
+			<xsd:attribute name="ID" type="xsd:string"/>
+			<xsd:attribute name="Nom" type="xsd:string"/>
+		</xsd:complexType>
+		<xsd:keyref name="UFmatiereRef" refer="MatiereKey">
+			<xsd:selector xpath="Matieres/Matiere" />
+			<xsd:field xpath="MatID/@MatiereID" />
+		</xsd:keyref>
+		<xsd:key name="UFKey">
+			<xsd:selector xpath="ListCursus/Cursus/UF"/>
+			<xsd:field xpath="@ID" />
+		</xsd:key>
+	</xsd:element>
+	
+	<xsd:element name="Matieres">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Matiere" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="Matiere" type="type-matiere">
+		<xsd:keyref name="MatiereUFRef" refer="UFKey">
+			<xsd:selector xpath="ListCursus/Cursus/UF" />
+			<xsd:field xpath="UFID/@ufID" />
+		</xsd:keyref>
+		<xsd:key name="MatiereKey">
+			<xsd:selector xpath="Matieres/Matiere"/>
+			<xsd:field xpath="@ID" />	
+		</xsd:key>
+	</xsd:element>
+	
+	<xsd:element name="Etudiant">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Personne" type="type-personne" />
+				<xsd:element name="Matieres">  
+					<xsd:complexType>
+						<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+							<xsd:element name="MatieresParAnnee" minOccurs="0" maxOccurs="unbounded">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="MatID" maxOccurs="unbounded">
+											<xsd:complexType>
+												<xsd:sequence>
+													<xsd:element name="Note" type="noteInt" minOccurs="0" maxOccurs="unbounded"/>
+												</xsd:sequence>
+												<xsd:attribute name="MatiereID" type="xsd:string"/>
+											</xsd:complexType>
+										</xsd:element>
+									</xsd:sequence>
+									<xsd:attribute name="Annee" />
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+					</xsd:complexType>
+					<xsd:keyref name="EtudMatiereRef" refer="MatiereKey">
+						<xsd:selector xpath="Matieres/Matiere" />
+						<xsd:field xpath="MatID/@MatiereID" />
+					</xsd:keyref>
+				</xsd:element>
+				<xsd:element name="AnneeActuelle" type="xsd:int"/>
+				<xsd:element name="Cursus">
+					<xsd:complexType>
+						<xsd:attribute name="CursusName" type="CursusType" />
+					</xsd:complexType>
+						<xsd:keyref name="CursusRef" refer="CursusKey">
+							<xsd:selector xpath="ListCursus/Cursus" />
+							<xsd:field xpath="Cursus/@CursusName" />
+						</xsd:keyref>
+				</xsd:element>
+				<xsd:element name="Groupe" type="xsd:string"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="Enseignant">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Personne" type="type-personne" />
+				<xsd:element name="MatID" minOccurs="0" maxOccurs="unbounded" >
+					<xsd:complexType>
+						<xsd:attribute name="MatiereID" type="xsd:string"/>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Grade" type="xsd:string"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		<xsd:keyref name="EnseignMatiereRef" refer="MatiereKey">
+			<xsd:selector xpath="Matieres/Matiere" />
+			<xsd:field xpath="MatID/@MatiereID" />
+		</xsd:keyref>
+	</xsd:element>
+</xsd:schema>
