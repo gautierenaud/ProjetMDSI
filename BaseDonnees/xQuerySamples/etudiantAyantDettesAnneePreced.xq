@@ -2,28 +2,18 @@ xquery version "1.0";
 let $etudiants := doc("../BD/Etudiant.xml")
 return 
 <ans>
-  
+   <etudiants>
     {
-      for $etudiant in $etudiants//Etudiant
-          return
-          <etudiant name="{$etudiant/Personne/Nom}">
-          {
-              for $matiereParAnnee in $etudiant/Matieres/MatieresParAnnee
-              where $matiereParAnnee/@Annee != $etudiants//Etudiant/AnneeActuelle/text()
-              
-               return 
-               <Matiere>
-                 <Moyennes>
-                   {  
-                       sum($matiereParAnnee/MatID/Note) div count($matiereParAnnee/MatID/Note)
-                     
-                   }
-                 </Moyennes>
-               </Matiere> 
-               
-            
-          }
-            </etudiant>
+     let $etudiantAvecDet := for $etudiant in $etudiants//Etudiant,
+        $matiereParAnnee in $etudiant/Matieres/MatieresParAnnee,
+        $matID in $matiereParAnnee/MatID
+           where $matiereParAnnee/@Annee != $etudiant/AnneeActuelle/text()
+            and sum($matID/Note) div count($matID/Note) <10
+             return 
+              $etudiant                                         
+          let $listEtudAvDet := distinct-values($etudiantAvecDet/Personne/Nom)
+          return $listEtudAvDet
+           
     }
-  
+     </etudiants>
  </ans>
