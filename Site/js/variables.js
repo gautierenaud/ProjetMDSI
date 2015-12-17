@@ -3,7 +3,7 @@
  */
 // liste des options disponibles dans le menu pour Enseignants
 var enseignantSideOptions = ["Matières Enseignées", "Par Matière", "Par Groupe", "Par Année", "Par Cursus"];
-var enseignantLink = ["#","#","#","#","#"];
+var enseignantLink = ["#","EnseignUneMat.html","#","#","#"];
 
 // liste des options disponibles dans le menu pour les étudiants
 var etudiantSideOptions = ["Matières Suivies", "Par Matière", "Par Moyenne", "Par Groupe", "Par Année", "Par Cursus", "Par Dettes"];
